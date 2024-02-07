@@ -17,7 +17,7 @@ services:
     environment: 
       DB_URL: mongodb://db/vidly
     command: ./docker-entrypoint.sh
-
+#above line is a sh script, wait for the database layer then run migration
   db:
     image: mongo:4.0-xenial
     ports:
